@@ -1,0 +1,15 @@
+from decouple import config
+
+AWS_DEFAULT_REGION = config("AWS_DEFAULT_REGION")
+AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
+
+EMAIL_USER = config("EMAIL_USER")
+EMAIL_PASS = config("EMAIL_PASS")
+EMAIL_SERVER = config("EMAIL_SERVER")
+EMAIL_PORT = config("EMAIL_PORT")
+EMAIL_SUBJECT = config("EMAIL_SUBJECT")
+
+SERVER_ERROR = "Internal Server Error"
+
+OK = 200
