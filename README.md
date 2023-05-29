@@ -1,7 +1,7 @@
 # API STORI
 
 ## About The Project
-====================
+===============================================================================
 Microservice allow compute and send email with account balance specific customer 
 
 ### Built With
@@ -153,4 +153,3 @@ See more in `htmlcov/index.html` with your browser
 Contact
 =======
 * **José Nicolielly** - - [jcnil](https://github.com/jcnil/api_stori)
-```
