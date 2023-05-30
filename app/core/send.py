@@ -24,7 +24,7 @@ class SendEmail:
             directory="app/core/templates"
         )
 
-        context = {
+        content = {
             "request": request,
             "total": account_balance.get('total'),
             "debit": account_balance.get('debit'),
@@ -35,7 +35,7 @@ class SendEmail:
 
         body = templates.TemplateResponse(
                  "email.html",
-                 context
+                 content
             )
 
         send = EmailMessage()
@@ -43,7 +43,7 @@ class SendEmail:
         send['To'] = email_customer
         send['Subject'] = EMAIL_SUBJECT
         send.add_header('Content-Type', 'text/html')
-        send.set_payload(body.template.render(context))
+        send.set_payload(body.template.render(content))
 
         context = ssl.create_default_context()
 

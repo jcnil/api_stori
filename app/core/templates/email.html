@@ -9,7 +9,7 @@
     </style>
 </head>
 <body>
-   <center><a href="https://www.storicard.com/"><img src="https://www.storicard.com/_next/static/media/complete-logo.0f6b7ce5.svg" type="img/svg"></a></center>
+   <center><a href="https://www.storicard.com/"><img src="https://www.storicard.com/_next/static/media/complete-logo.0f6b7ce5.svg" type="img/svg" alt="Logo-Stori"></a></center>
     <br/>
     <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#939297;">
         <table role="presentation" style="width:100%;border:none;border-spacing:0;">
@@ -26,23 +26,23 @@
     <tbody>
         <tr>
             <td>Total balance is {{ total }}</td>
-            <td>Average debit amount: {{ debit }}</td>
         </tr>
         <tr>
-            <td>Number of transactions in {{ months[0] }}: {{ move[0] }}</td>
+            <td>Average debit amount: {{ debit }}</td>
             <td>Average credit amount: {{ credit }}</td>
         </tr>
-        <tr>
-            <td>Number of transactions in {{ months[1] }}: {{ move[1] }}</td>
-            <td></td>
+        {% for i in range(months | length) -%}
+        <tr align="left">
+              <td>Number of transactions in {{ months[i] }}: {{ move[i] }}</td>
         </tr>
+        {% endfor -%}
     <tbody>
     </table>
     </br>
-    <a href="https://www.storicard.com/"><img src="https://www.storicard.com/_next/static/media/complete-logo.0f6b7ce5.svg" type="img/svg" width="100" height="80"></a>
+    <a href="https://www.storicard.com/"><img src="https://www.storicard.com/_next/static/media/complete-logo.0f6b7ce5.svg" type="img/svg" width="100" height="80" alt="Logo-Stori"></a>
     </br>
-    <a href="https://www.facebook.com/Stori.MX"><img src="https://www.storicard.com/_next/static/media/facebook.0600593b.svg" type="img/svg" width="25" height="25"/></a>  <a href="https://www.instagram.com/stori.card/?hl=en"><img src="https://www.storicard.com/_next/static/media/instagram.e91a930b.svg" type="img/svg" width="25" height="25"/></a> <a href="https://twitter.com/stori_mx"><img src="https://www.storicard.com/_next/static/media/twitter.47b792de.svg" type="img/svg" width="25" height="25"/></a> <a href="https://www.linkedin.com/company/stori-card/"><img src="https://www.storicard.com/_next/static/media/linkedin.ea33b030.svg" type="img/svg" width="25" height="25"/></a>
+    <a href="https://www.facebook.com/Stori.MX"><img src="https://www.storicard.com/_next/static/media/facebook.0600593b.svg" type="img/svg" width="25" height="25" alt="logo-facebook"/></a>  <a href="https://www.instagram.com/stori.card/?hl=en"><img src="https://www.storicard.com/_next/static/media/instagram.e91a930b.svg" type="img/svg" width="25" height="25" alt="logo-instagram"/></a> <a href="https://twitter.com/stori_mx"><img src="https://www.storicard.com/_next/static/media/twitter.47b792de.svg" type="img/svg" width="25" height="25" alt="logo-twitter"/></a> <a href="https://www.linkedin.com/company/stori-card/"><img src="https://www.storicard.com/_next/static/media/linkedin.ea33b030.svg" type="img/svg" width="25" height="25" alt="logo-linkedin"/></a>
     </br>
-    <h6>Sujeto a aprobacion de credito | Copyright 2022 <img src="https://www.storicard.com/_next/static/media/mastercard.26c6a28d.svg" type="img/svg"/> <img src="https://www.storicard.com/_next/static/media/condusef.5454a409.svg" type="img/svg"/> <img src="https://www.storicard.com/_next/static/media/banco-de-mexico.b49cbce1.svg" type="img/svg"/> <a href="https://www.storicard.com/buro-de-entidades-financieras"><img src="https://www.storicard.com/_next/static/media/buro.4e68d6cc.svg" type="img/svg"/></a></h6>
+    <h6>Sujeto a aprobacion de credito | Copyright 2022 <img src="https://www.storicard.com/_next/static/media/mastercard.26c6a28d.svg" type="img/svg" alt="logo-mastercard"/> <img src="https://www.storicard.com/_next/static/media/condusef.5454a409.svg" type="img/svg" alt="logo-condusef"/> <img src="https://www.storicard.com/_next/static/media/banco-de-mexico.b49cbce1.svg" type="img/svg" alt="logo-banco-mexico"/> <a href="https://www.storicard.com/buro-de-entidades-financieras"><img src="https://www.storicard.com/_next/static/media/buro.4e68d6cc.svg" type="img/svg" alt="logo-buro"/></a></h6>
 </body>
 </html>
