@@ -1,7 +1,6 @@
 # API STORI
 
 ## About The Project
-===============================================================================
 Microservice allow compute and send email with account balance specific customer 
 
 ### Built With
